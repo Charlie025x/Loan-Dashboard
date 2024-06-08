@@ -12,7 +12,7 @@ const AgentNotes = () => {
           <MdSpeakerNotes className="" color="white" />
         </div>
         <button className="flex justify-between" onClick={handleClick}>
-          <p className="ml-2">Agent Notes</p>
+          <p className="ml-2 text-white">Agent Notes</p>
           <p className="mx-2 rounded-full border p-1">
             <FaChevronDown
               color="white"

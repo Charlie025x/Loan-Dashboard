@@ -12,7 +12,7 @@ const Actions = () => {
           <BsFileEarmarkFill className="" color="white" />
         </div>
         <button className="flex justify-between" onClick={handleClick}>
-          <p className="bg-slate-200">Actions</p>
+          <p className="ml-2 text-white">Actions</p>
           <p className="mx-2 rounded-full border p-1">
             <FaChevronDown color="white" className="rotate-180" />
           </p>
