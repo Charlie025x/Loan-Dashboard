@@ -1,9 +1,10 @@
 import React from "react";
 import { FaChevronDown, FaExternalLinkAlt, FaUser } from "react-icons/fa";
 import { MdOutlineWarning } from "react-icons/md";
+import Account_Group from "./Account_Group";
 
 const AccountSummary = () => {
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = React.useState(true);
   const handleClick = () => setShow((prevState) => !prevState);
   return (
     <div>
@@ -20,7 +21,7 @@ const AccountSummary = () => {
       </div>
       {/* drop down */}
       <div
-        className={`pannel w-full overflow-y-hidden bg-slate-200 ${!show ? "max-h-0" : "max-h-[50rem]"} transition-all duration-100 ease-in-out`}
+        className={`pannel w-full overflow-y-hidden bg-slate-200 ${!show ? "max-h-0" : "max-h-[70rem]"} transition-all duration-100 ease-in-out`}
       >
         <div className="flex flex-wrap gap-2 p-4">
           <div className="message flex w-full items-center border border-red-500">
@@ -104,128 +105,7 @@ const AccountSummary = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex bg-slate-600">
-          <h4 className="">Groups</h4> <FaChevronDown />
-        </div>
-        <div>
-          <div className="flex flex-col justify-stretch border-4 border-black">
-            <h5 className="bg-slate-400 px-2 py-1">Group AA</h5>
-
-            <div className="flex grow flex-wrap justify-between gap-2 px-2 py-1 [&>div]:bg-amber-200">
-              <div className="flex grow flex-col flex-wrap">
-                <div className="flex flex-wrap justify-between">
-                  <p>Loan Type:</p>
-                  <p>subsidized</p>
-                </div>
-                <div className="flex flex-wrap justify-between">
-                  <p>Repayment Plan:</p>
-                  <p>Standard</p>
-                </div>
-                <div className="flex flex-wrap justify-between">
-                  <p>Lender:</p>
-                  <p>The Department of Education</p>
-                </div>
-                <div className="flex flex-wrap justify-between">
-                  <p>Outstanding Balance:</p>
-                  <p>$X,XXX.XX</p>
-                </div>
-              </div>
-              <div className="flex grow flex-col flex-wrap justify-between">
-                <div className="flex flex-wrap justify-between">
-                  <p>Past Due:</p>
-                  <p>$X,XXX.XX since 01/01/2024</p>
-                </div>
-                <div className="flex flex-wrap justify-between">
-                  <p>Amount:</p>
-                  <p>$X,XXX.XX</p>
-                </div>
-                <div className="flex flex-wrap justify-between">
-                  <p>Outstanding Balance:</p>
-                  <p>$X,XXX.XX</p>
-                </div>
-                <div className="flex flex-wrap justify-between">
-                  <p>Outstanding Balance:</p>
-                  <p>$X,XXX.XX</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="block">
-              <p className="inline px-2 py-1">BalanceDetails</p>
-              <FaChevronDown className="inline" />
-            </div>
-
-            <div className="flex grow flex-wrap justify-between gap-2 px-2 py-1 [&>div]:bg-amber-200">
-              <div className="flex grow flex-col flex-wrap">
-                <div className="flex flex-wrap justify-between">
-                  <p className="inline">Outstanding Principal:</p>
-                  <p>$XX,XXX.XX</p>
-                </div>
-                <div className="flex flex-wrap justify-between">
-                  <p className="inline">Outstanding Interest:</p>
-                  <p>$XXX.XX</p>
-                </div>
-                <div className="flex flex-wrap justify-between">
-                  <p className="inline">Outstanding Fees:</p>
-                  <p>The Department of Education</p>
-                </div>
-                <div className="flex flex-wrap justify-between">
-                  <p className="inline">Original Balance:</p>
-                  <p>$X,XXX.XX</p>
-                </div>
-              </div>
-              <div className="flex grow flex-col flex-wrap justify-between">
-                <div className="flex flex-wrap justify-between">
-                  <p className="inline">Daily Interest Accrual:</p>
-                  <p>$X.XX</p>
-                </div>
-                <div className="flex flex-wrap justify-between">
-                  <p className="inline">Capped Interest Amount:</p>
-                  <p>$X,XXX.XX</p>
-                </div>
-                <div className="flex flex-wrap justify-between">
-                  <p className="inline">Interest Paid YTD:</p>
-                  <p>$X,XXX.XX</p>
-                </div>
-                <div className="flex flex-wrap justify-between">
-                  <p className="inline">Principal Paid YTD:</p>
-                  <p>$X,XXX.XX</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="block">
-              <p className="inline px-2 py-1">Show Loans In this Group</p>
-              <FaChevronDown className="inline" />
-            </div>
-            {/* grid-cols-[repeat(auto-fit,minmax(3rem,1fr))] */}
-            {/* auto-cols-[minmax(4rem,auto)] */}
-            <div className="px-2 py-1">
-              <div className="grid grid-cols-1 bg-lime-300">
-                <div className="grid grid-cols-[repeat(9,minmax(auto,1fr))] gap-4 overflow-x-auto [&>p]:px-0">
-                  <p>Loan#</p>
-                  <p>Subsidy</p>
-                  <p>Comaker</p>
-                  <p>Intereest Rate</p>
-                  <p>Principal</p>
-                  <p>Interest</p>
-                  <p>Fees</p>
-                  <p>Balance</p>
-                  <p>Details</p>
-                  <p>1</p>
-                  <p>Unsubsidized</p>
-                  <p></p>
-                  <p>6.5%</p>
-                  <p>$XX,XXX.XX</p>
-                  <p>$XXX.XX</p>
-                  <p>10.00</p>
-                  <p>$XX,XXX.XX</p>
-                  <FaExternalLinkAlt className="mx-auto" />
-                </div>
-              </div>
-            </div>
-          </div>
+          <Account_Group />
         </div>
       </div>
     </div>

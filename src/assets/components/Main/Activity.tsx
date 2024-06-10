@@ -2,7 +2,7 @@ import React from "react";
 import { FaChevronDown } from "react-icons/fa";
 
 const Activity = () => {
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = React.useState(true);
   const handleClick = () => setShow((prevState) => !prevState);
   return (
     <div>
