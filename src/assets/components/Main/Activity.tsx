@@ -9,7 +9,7 @@ const Activity = () => {
       {/* title */}
       <div className="grid min-h-[calc(1.33rem+16px)] grid-cols-[1fr_auto] items-center justify-between bg-blue-700">
         <button className="flex justify-between" onClick={handleClick}>
-          <p className="bg-slate-200">Borrower Activity</p>
+          <p className="ml-2 text-white">Borrower Activity</p>
           <p className="mx-2 rounded-full border p-1">
             <FaChevronDown
               className={`transition-transform ${show ? "rotate-180" : ""}`}

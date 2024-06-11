@@ -8,9 +8,8 @@ import Actions from "./SideNav/Actions";
 
 const SideNav = () => {
   return (
-    <div className="bg-stone-500">
-      SideNav
-      <div className="left-pane-wrapper overflow-y-auto overflow-x-hidden">
+    <div className="h-full overflow-hidden bg-stone-500">
+      <div className="left-pane-wrapper h-full overflow-y-auto overflow-x-hidden">
         <div className="panel-accordion flex flex-col">
           <div className="bg-blue-700">
             <div className="p-4 text-white">

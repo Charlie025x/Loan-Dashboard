@@ -12,7 +12,9 @@ const Account_ShowLoans = () => {
           onClick={handleClick}
         >
           <p className="inline px-2 py-1">Show Loans In this Group</p>
-          <FaChevronDown className="inline" />
+          <FaChevronDown
+            className={`inline transition-transform ${show ? "rotate-180" : ""}`}
+          />
         </button>
       </div>
       {/* grid-cols-[repeat(auto-fit,minmax(3rem,1fr))] */}

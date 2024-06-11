@@ -8,13 +8,15 @@ const Account_Group = () => {
   const handleClick = () => setShow((prevState) => !prevState);
   return (
     <>
-      <div className="bg-slate-600">
+      <div className="">
         <button
           className="flex items-center justify-between"
           onClick={handleClick}
         >
-          <p>Groups</p>
-          <FaChevronDown className="ml-2" />
+          <h5 className="text-2xl text-blue-700">Groups</h5>
+          <FaChevronDown
+            className={`ml-2 transition-transform ${show ? "rotate-180" : ""}`}
+          />
         </button>
       </div>
       <div

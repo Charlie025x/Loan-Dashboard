@@ -1,5 +1,6 @@
 import React from "react";
 import { FaChevronDown } from "react-icons/fa";
+import Selector from "./Selector";
 
 const Demographics = () => {
   const [show, setShow] = React.useState(true);
@@ -9,7 +10,7 @@ const Demographics = () => {
       {/* title */}
       <div className="grid min-h-[calc(1.33rem+16px)] grid-cols-[1fr_auto] items-center justify-between bg-blue-700">
         <button className="flex justify-between" onClick={handleClick}>
-          <p className="bg-slate-200">Demographics - Verified</p>
+          <p className="ml-2 text-white">Demographics - Verified</p>
           <p className="mx-2 rounded-full border p-1">
             <FaChevronDown
               className={`transition-transform ${show ? "rotate-180" : ""}`}
@@ -26,104 +27,109 @@ const Demographics = () => {
             {/* address */}
             <div className="w-full border border-black p-2">
               <h4 className="mb-6 font-bold">Address - Unverified</h4>
-              <div className="relative mb-4">
-                <label
-                  className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
-                  htmlFor="InteractionType"
-                >
-                  Country
-                </label>
-                <input
-                  className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
-                  type="text"
-                  name=""
-                  id=""
-                />
+
+              <div className="flex flex-wrap gap-4">
+                <Selector />
+                <div className="relative">
+                  <label
+                    className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
+                    htmlFor="InteractionType"
+                  >
+                    Country
+                  </label>
+                  <input
+                    className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div className="relative basis-full">
+                  <label
+                    className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
+                    htmlFor="InteractionType"
+                  >
+                    Address Line 1
+                  </label>
+                  <input
+                    className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div className="relative basis-full">
+                  <label
+                    className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
+                    htmlFor="InteractionType"
+                  >
+                    Address Line 2
+                  </label>
+                  <input
+                    className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div className="relative basis-full">
+                  <label
+                    className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
+                    htmlFor="InteractionType"
+                  >
+                    City
+                  </label>
+                  <input
+                    className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div className="relative basis-1/5">
+                  <label
+                    className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
+                    htmlFor="InteractionType"
+                  >
+                    State
+                  </label>
+                  <input
+                    className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div className="relative basis-1/5">
+                  <label
+                    className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
+                    htmlFor="InteractionType"
+                  >
+                    Zip
+                  </label>
+                  <input
+                    className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div className="relative mb-4 basis-1/2">
+                  <label
+                    className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
+                    htmlFor="InteractionType"
+                  >
+                    Source
+                  </label>
+                  <input
+                    className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                </div>
               </div>
-              <div className="relative mb-4">
-                <label
-                  className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
-                  htmlFor="InteractionType"
-                >
-                  Address Line 1
-                </label>
-                <input
-                  className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
-                  type="text"
-                  name=""
-                  id=""
-                />
-              </div>
-              <div className="relative mb-4">
-                <label
-                  className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
-                  htmlFor="InteractionType"
-                >
-                  Address Line 2
-                </label>
-                <input
-                  className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
-                  type="text"
-                  name=""
-                  id=""
-                />
-              </div>
-              <div className="relative mb-4">
-                <label
-                  className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
-                  htmlFor="InteractionType"
-                >
-                  City
-                </label>
-                <input
-                  className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
-                  type="text"
-                  name=""
-                  id=""
-                />
-              </div>
-              <div className="relative mb-4">
-                <label
-                  className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
-                  htmlFor="InteractionType"
-                >
-                  State
-                </label>
-                <input
-                  className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
-                  type="text"
-                  name=""
-                  id=""
-                />
-              </div>
-              <div className="relative mb-4">
-                <label
-                  className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
-                  htmlFor="InteractionType"
-                >
-                  Zip
-                </label>
-                <input
-                  className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
-                  type="text"
-                  name=""
-                  id=""
-                />
-              </div>
-              <div className="relative mb-4">
-                <label
-                  className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
-                  htmlFor="InteractionType"
-                >
-                  Source
-                </label>
-                <input
-                  className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
-                  type="text"
-                  name=""
-                  id=""
-                />
-              </div>
+
               <button className="bg-green-300">Verify Address</button>
             </div>
 

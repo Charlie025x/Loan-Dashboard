@@ -1,5 +1,5 @@
 import React from "react";
-import { FaChevronDown, FaExternalLinkAlt, FaUser } from "react-icons/fa";
+import { FaChevronDown, FaUser } from "react-icons/fa";
 import { MdOutlineWarning } from "react-icons/md";
 import Account_Group from "./Account_Group";
 
@@ -11,7 +11,7 @@ const AccountSummary = () => {
       {/* title */}
       <div className="grid min-h-[calc(1.33rem+16px)] grid-cols-[1fr_auto] items-center justify-between bg-blue-700">
         <button className="flex justify-between" onClick={handleClick}>
-          <p className="bg-slate-200">Account Summary</p>
+          <p className="ml-2 text-white">Account Summary</p>
           <p className="mx-2 rounded-full border p-1">
             <FaChevronDown
               className={`transition-transform ${show ? "rotate-180" : ""}`}
