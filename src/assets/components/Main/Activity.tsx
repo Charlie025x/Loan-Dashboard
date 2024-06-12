@@ -29,13 +29,14 @@ const Activity = () => {
           <div className="">
             <div className="grid grid-cols-1">
               <div className="grid grid-cols-[repeat(3,minmax(auto,1fr))] gap-4 overflow-x-auto">
-                <p>Borrower History</p>
+                <p className="border-b-2 border-blue-700">Borrower History</p>
                 <p>Defer/Forb History</p>
                 <p>Payments</p>
               </div>
             </div>
             <div className="grid grid-cols-1">
-              <div className="grid grid-cols-[repeat(5,minmax(auto,1fr))] gap-4 overflow-x-auto border-b-2 border-black">
+              {/* <div className="grid grid-cols-[repeat(5,minmax(auto,1fr))] gap-4 overflow-x-auto border-b-2 border-black"> */}
+              <div className="grid grid-cols-[repeat(5,minmax(auto,1fr))] overflow-x-auto [&>*]:p-2">
                 <p>Date</p>
                 <p>Action</p>
                 <p>Description</p>
@@ -46,11 +47,31 @@ const Activity = () => {
               <input type="search" name="" placeholder="Search" id="" />
               <input type="search" name="" placeholder="Search" id="" />
               <input type="search" name="" placeholder="Search" id="" /> */}
-                <p>06-02-2024 05:06:20 AM</p>
-                <p>993</p>
-                <p></p>
-                <p>ED</p>
-                <p>JohnDoe</p>
+                <p className="bg-slate-500">06-02-2024 05:06:20 AM</p>
+                <p className="bg-slate-500">993</p>
+                <p className="bg-slate-500"></p>
+                <p className="bg-slate-500">ED</p>
+                <p className="bg-slate-500">JohnDoe</p>
+                <p className="">06-02-2024 05:06:20 AM</p>
+                <p className="">993</p>
+                <p className=""></p>
+                <p className="">ED</p>
+                <p className="">JohnDoe</p>
+                <p className="bg-slate-500">06-02-2024 05:06:20 AM</p>
+                <p className="bg-slate-500">993</p>
+                <p className="bg-slate-500"></p>
+                <p className="bg-slate-500">ED</p>
+                <p className="bg-slate-500">JohnDoe</p>
+                <p className="">06-02-2024 05:06:20 AM</p>
+                <p className="">993</p>
+                <p className=""></p>
+                <p className="">ED</p>
+                <p className="">JohnDoe</p>
+                <p className="bg-slate-500">06-02-2024 05:06:20 AM</p>
+                <p className="bg-slate-500">993</p>
+                <p className="bg-slate-500"></p>
+                <p className="bg-slate-500">ED</p>
+                <p className="bg-slate-500">JohnDoe</p>
               </div>
             </div>
           </div>

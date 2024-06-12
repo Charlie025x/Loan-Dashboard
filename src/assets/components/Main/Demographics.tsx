@@ -20,7 +20,7 @@ const Demographics = () => {
       </div>
       {/* drop down */}
       <div
-        className={`pannel w-full overflow-y-hidden bg-slate-200 ${!show ? "max-h-0" : "max-h-[65rem]"} transition-all duration-100 ease-in-out`}
+        className={`pannel w-full overflow-y-hidden bg-slate-200 ${!show ? "max-h-0" : "max-h-[80rem]"} transition-all duration-100 ease-in-out`}
       >
         <div className="overflow-y-auto">
           <div className="flex flex-wrap gap-2 p-2 [&>div]:lg:grow [&>div]:lg:basis-1/4">
@@ -29,7 +29,6 @@ const Demographics = () => {
               <h4 className="mb-6 font-bold">Address - Unverified</h4>
 
               <div className="flex flex-wrap gap-4">
-                <Selector />
                 <div className="relative">
                   <label
                     className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
@@ -42,6 +41,7 @@ const Demographics = () => {
                     type="text"
                     name=""
                     id=""
+                    value="United States"
                   />
                 </div>
                 <div className="relative basis-full">
@@ -126,6 +126,7 @@ const Demographics = () => {
                     type="text"
                     name=""
                     id=""
+                    value="Borrower"
                   />
                 </div>
               </div>
@@ -147,6 +148,7 @@ const Demographics = () => {
                   type="text"
                   name=""
                   id=""
+                  value="(XXX) XXX - XXXX"
                 />
               </div>
               <button className="bg-green-300">Verify Email</button>
@@ -160,7 +162,7 @@ const Demographics = () => {
                     className="absolute left-0 ml-1 -translate-y-3 bg-slate-200 px-1 text-sm"
                     htmlFor="InteractionType"
                   >
-                    Source
+                    Email Address
                   </label>
                   <input
                     className="w-full rounded-sm border border-blue-700 bg-transparent p-1"
