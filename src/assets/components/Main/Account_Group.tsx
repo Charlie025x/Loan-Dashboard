@@ -1,5 +1,5 @@
 import React from "react";
-import { FaChevronDown, FaExternalLinkAlt } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import Account_BalanceDetails from "./Account_BalanceDetails";
 import Account_ShowLoans from "./Account_ShowLoans";
 
@@ -22,10 +22,10 @@ const Account_Group = () => {
       <div
         className={`pannel w-full overflow-y-hidden ${!show ? "max-h-0" : "max-h-[70rem]"} transition-all duration-100 ease-in-out`}
       >
-        <div className="flex flex-col justify-stretch border-4 border-black">
+        <div className="flex flex-col justify-stretch overflow-hidden rounded-md border-2 border-black">
           <h5 className="bg-slate-400 px-2 py-1">Group AA</h5>
 
-          <div className="flex grow flex-wrap justify-between gap-2 px-2 py-1 [&>div]:bg-amber-200">
+          <div className="flex grow flex-wrap justify-between gap-5 bg-slate-300 px-2 py-1">
             <div className="flex grow flex-col flex-wrap">
               <div className="flex flex-wrap justify-between">
                 <p>Loan Type:</p>

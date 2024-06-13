@@ -1,6 +1,5 @@
 import React from "react";
-import { FaCheck, FaChevronDown, FaExclamation } from "react-icons/fa";
-import AccordionHead from "../AccordionHead";
+import { FaCheck, FaChevronDown } from "react-icons/fa";
 
 const Authenticate = () => {
   const [show, setShow] = React.useState(false);

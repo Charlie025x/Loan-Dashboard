@@ -1,6 +1,5 @@
 import React from "react";
 import { FaChevronDown } from "react-icons/fa";
-import Selector from "./Selector";
 
 const Demographics = () => {
   const [show, setShow] = React.useState(true);
@@ -151,7 +150,7 @@ const Demographics = () => {
                   value="(XXX) XXX - XXXX"
                 />
               </div>
-              <button className="bg-green-300">Verify Email</button>
+              <button className="bg-green-300">Verify Number</button>
             </div>
 
             <div className="flex w-full flex-wrap gap-2">

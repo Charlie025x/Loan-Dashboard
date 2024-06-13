@@ -23,8 +23,8 @@ const Account_ShowLoans = () => {
       <div
         className={`pannel w-full overflow-y-hidden ${!show ? "max-h-0" : "max-h-[70rem]"} transition-all duration-100 ease-in-out`}
       >
-        <div className="px-2 py-1">
-          <div className="grid grid-cols-1 bg-lime-300">
+        <div className="bg-gray-400 px-2 py-1">
+          <div className="grid grid-cols-1">
             <div className="grid grid-cols-[repeat(9,minmax(auto,1fr))] gap-4 overflow-x-auto [&>p]:px-0">
               <p>Loan#</p>
               <p>Subsidy</p>

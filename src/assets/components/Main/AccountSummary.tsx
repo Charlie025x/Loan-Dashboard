@@ -36,7 +36,7 @@ const AccountSummary = () => {
               Payment Amount in the Accounts section below.
             </p>
           </div>
-          <div className="flex w-full flex-wrap bg-green-300">
+          <div className="flex w-full flex-wrap bg-slate-300">
             <div className="flex grow flex-wrap p-4">
               {/* TODO: remove order on appropiate screen size  */}
 

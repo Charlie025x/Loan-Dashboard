@@ -1,5 +1,3 @@
-import React from "react";
-
 const Header = () => {
   return (
     <header className="col-span-full flex justify-between bg-slate-400">

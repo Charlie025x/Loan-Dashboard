@@ -22,7 +22,7 @@ const Account_BalanceDetails = () => {
       <div
         className={`pannel w-full overflow-y-hidden ${!show ? "max-h-0" : "max-h-[70rem]"} transition-all duration-100 ease-in-out`}
       >
-        <div className="flex grow flex-wrap justify-between gap-2 px-2 py-1 [&>div]:bg-amber-200">
+        <div className="flex grow flex-wrap justify-between gap-5 bg-slate-300 px-2 py-1">
           <div className="flex grow flex-col flex-wrap">
             <div className="flex flex-wrap justify-between">
               <p className="inline">Outstanding Principal:</p>

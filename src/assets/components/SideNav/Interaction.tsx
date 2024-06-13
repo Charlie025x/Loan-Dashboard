@@ -38,6 +38,7 @@ const Interaction = () => {
                 type="text"
                 name=""
                 id=""
+                value="Inbound"
               />
             </div>
 
@@ -53,6 +54,7 @@ const Interaction = () => {
                 type="text"
                 name=""
                 id=""
+                value="Borrower"
               />
             </div>
             <div className="relative">

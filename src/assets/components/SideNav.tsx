@@ -1,5 +1,3 @@
-import React from "react";
-
 import Interaction from "./SideNav/Interaction";
 import Authenticate from "./SideNav/Authenticate";
 import Alerts from "./SideNav/Alerts";

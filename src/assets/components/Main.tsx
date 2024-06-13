@@ -1,5 +1,3 @@
-import React from "react";
-
 import Demographics from "./Main/Demographics";
 import AccountSummary from "./Main/AccountSummary";
 import Activity from "./Main/Activity";
