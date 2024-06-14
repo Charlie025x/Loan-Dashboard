@@ -6,7 +6,9 @@ const Main = () => {
   return (
     <div className="overflow-x-hidden">
       <div className="grid min-h-full grid-rows-[auto_1fr] bg-stone-400">
-        <div className="bg-slate-800 text-white">hi</div>
+        <div className="bg-slate-800 text-white">
+          <button className="px-2">Forbearance</button>
+        </div>
         <div className="overflow-y-auto p-6 [&>div]:mb-4">
           <Demographics />
           <AccountSummary />

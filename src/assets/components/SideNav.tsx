@@ -12,12 +12,21 @@ const SideNav = () => {
           <div className="bg-blue-700">
             <div className="p-4 text-white">
               <div className="mb-2">
-                <p>About:</p>
-                <p>SSN:</p>
-                <p>ED:</p>
+                <div className="flex flex-wrap justify-between">
+                  <p>About:</p>
+                  <p>XXXXXXX</p>
+                </div>
+                <div className="flex flex-wrap justify-between">
+                  <p>SSN:</p>
+                  <p>XXX-XX-XXXX</p>
+                </div>
+                <div className="flex flex-wrap justify-between">
+                  <p>ED:</p>
+                  <p>XXXX-XXXX-XXXX</p>
+                </div>
               </div>
               <div className="">
-                <p>Account Registered</p>
+                <p className="text-sm">Account Registered</p>
               </div>
             </div>
             <Interaction />

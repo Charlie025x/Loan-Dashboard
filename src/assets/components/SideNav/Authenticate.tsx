@@ -15,7 +15,7 @@ const Authenticate = () => {
           <p className="mx-2 rounded-full border p-1">
             <FaChevronDown
               color="white"
-              className={`transition-transform ${show ? "rotate-180" : ""}`}
+              className={`transition-transform ${show && "rotate-180"}`}
             />
           </p>
         </button>
@@ -32,31 +32,31 @@ const Authenticate = () => {
               type="checkbox"
               name=""
               id=""
-              className="checked:blue-700 h-4 w-4 cursor-pointer appearance-none rounded-sm border-2 border-blue-700 bg-transparent checked:bg-blue-700"
+              className="checked:blue-700 mr-2 h-4 w-4 cursor-pointer appearance-none rounded-sm border-2 border-blue-700 bg-transparent checked:bg-blue-700"
             />
             <p className="grow">Acct #</p>
-            <p className="font-bold">xxx-xx-xxxx</p>
+            <p className="font-bold">XXXX-XXXX-XXXX</p>
           </div>
           <div className="flex items-center">
             <input
-              className="checked:blue-700 h-4 w-4 cursor-pointer appearance-none rounded-sm border-2 border-blue-700 bg-transparent checked:bg-blue-700"
+              className="checked:blue-700 mr-2 h-4 w-4 cursor-pointer appearance-none rounded-sm border-2 border-blue-700 bg-transparent checked:bg-blue-700"
               type="checkbox"
               name=""
               id=""
             />
             <p className="grow">SSN</p>
-            <p className="font-bold">xxx-xx-xxxx</p>
+            <p className="font-bold">XXX-XX-XXXX</p>
           </div>
           <h5>Verify Date of Birth:</h5>
           <div className="flex items-center">
             <input
-              className="checked:blue-700 h-4 w-4 cursor-pointer appearance-none rounded-sm border-2 border-blue-700 bg-transparent checked:bg-blue-700"
+              className="checked:blue-700 mr-2 h-4 w-4 cursor-pointer appearance-none rounded-sm border-2 border-blue-700 bg-transparent checked:bg-blue-700"
               type="checkbox"
               name=""
               id=""
             />
             <p className="grow">DOB</p>
-            <p className="font-bold">xxx-xx-xxxx</p>
+            <p className="font-bold">XX/XX/XXXX</p>
           </div>
         </div>
       </div>

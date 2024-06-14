@@ -130,7 +130,7 @@ const Demographics = () => {
                 </div>
               </div>
 
-              <button className="bg-green-300">Verify Address</button>
+              <button className="bg-green-300 p-1">Verify Address</button>
             </div>
 
             <div className="w-full border border-black p-2">
@@ -150,7 +150,7 @@ const Demographics = () => {
                   value="(XXX) XXX - XXXX"
                 />
               </div>
-              <button className="bg-green-300">Verify Number</button>
+              <button className="bg-green-300 p-1">Verify Number</button>
             </div>
 
             <div className="flex w-full flex-wrap gap-2">
@@ -170,7 +170,7 @@ const Demographics = () => {
                     id=""
                   />
                 </div>
-                <button className="bg-green-300">Verify Email</button>
+                <button className="bg-green-300 p-1">Verify Email</button>
               </div>
               <div className="grow border border-black p-2">
                 <h4 className="mb-6">Latest Enrollment</h4>

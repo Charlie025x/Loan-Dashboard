@@ -42,7 +42,7 @@ const AccountSummary = () => {
 
               <div className="order-2 basis-full lg:basis-2/3 lg:pr-2">
                 <div className="mb-2 border-b-2 border-black text-center">
-                  Loan Dash Account # XXXXXXXXXXX
+                  Loan Dash Account # XXXX-XXXX-XXXX
                 </div>
                 <div className="flex grow flex-wrap gap-2 [&>*]:bg-slate-400">
                   <div className="flex grow flex-col p-2">

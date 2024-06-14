@@ -16,7 +16,7 @@ const AgentNotes = () => {
           <p className="mx-2 rounded-full border p-1">
             <FaChevronDown
               color="white"
-              className={`transition-transform ${show ? "rotate-180" : ""}`}
+              className={`transition-transform ${show && "rotate-180"}`}
             />
           </p>
         </button>
