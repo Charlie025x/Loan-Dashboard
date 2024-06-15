@@ -3,7 +3,7 @@ import { BsFileEarmarkFill } from "react-icons/bs";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 
 const Actions = () => {
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = React.useState(true);
   const handleClick = () => setShow((prevState) => !prevState);
   const actions = [
     "Payment",

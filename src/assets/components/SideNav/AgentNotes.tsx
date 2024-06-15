@@ -3,7 +3,7 @@ import { FaChevronDown } from "react-icons/fa";
 import { MdSpeakerNotes } from "react-icons/md";
 
 const AgentNotes = () => {
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = React.useState(true);
   const handleClick = () => setShow((prevState) => !prevState);
   return (
     <>
