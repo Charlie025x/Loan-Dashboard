@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "SEGA-LOGO-FONT";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("SEGA LOGO FONT"),
+    url("./assets/fonts/SEGA.woff") format("woff");
+}
+
 #root {
   margin: 0 auto;
 }

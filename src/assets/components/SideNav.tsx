@@ -10,11 +10,10 @@ const SideNav = () => {
   const [show, setShow] = React.useState(false);
   const handleClick = () => setShow((prevState) => !prevState);
   return (
-    <div className="relative h-full overflow-hidden">
-      <div
-        // className={`$ flex w-10 items-center justify-center bg-blue-700 md:hidden`}
-        className={`bottom-0 right-0 top-0 h-full w-10 items-center justify-center bg-blue-700 md:hidden ${show && "absolute"}`}
-      >
+    <div
+      className={`relative h-full overflow-hidden ${show && "flex w-screen"}`}
+    >
+      <div className={`order-2 h-full w-10 bg-blue-700 md:hidden`}>
         <button onClick={handleClick} className="h-full w-full">
           <FaChevronRight
             color="white"
@@ -24,10 +23,10 @@ const SideNav = () => {
       </div>
       <div
         // className={`h-full w-[100%-2.5rem] overflow-hidden bg-stone-500 md:block ${!show && "hidden"}`}
-        className={`h-full w-[100vw] overflow-hidden bg-stone-500 pr-10 md:block md:w-[310px] md:pr-0 ${!show && "hidden"}`}
+        className={`h-full overflow-hidden bg-stone-500 md:block md:w-[310px] ${!show && "hidden"} grow`}
       >
         <div className="left-pane-wrapper h-full overflow-y-auto overflow-x-hidden">
-          <div className="panel-accordion flex flex-col">
+          <div className="flex flex-col">
             <div className="bg-blue-700">
               <div className="p-4 text-white">
                 <div className="mb-2">
